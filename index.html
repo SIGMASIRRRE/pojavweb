@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pojav Tierlist 1.9+</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="banner">
+      <h1>Pojav Tierlist 1.9+</h1>
+    </div>
+    <button id="menuButton" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <div id="menu" class="menu hidden">
+    <button onclick="closeMenu()" class="close-btn">✕</button>
+    <button onclick="openSection('intro')">Menu</button>
+    <button onclick="openSection('rules')">Rules & Info</button>
+    <button onclick="openSection('overall')">Overall</button>
+    <button onclick="openSection('netherite')">Netherite Potion</button>
+    <button onclick="openSection('crystal')">Crystal PvP</button>
+    <button onclick="openSection('diamond')">Diamond Potion</button>
+    <button onclick="openSection('uhc')">UHC</button>
+    <button onclick="openSection('axe')">Axe and Shield</button>
+    <button onclick="openSection('smp')">SMP Kit</button>
+    <button onclick="openSection('sword')">Sword</button>
+  </div>
+
+  <main>
+    <section id="intro" class="section active">
+      <h2>Welcome to the Pojav Tierlist</h2>
+      <p>This tierlist ranks the top Minecraft 1.9+ PvP players in the PojavLauncher community.</p>
+      <p><strong>Owners:</strong> HeroesLegendOP, Flexzor/Sxtream, Stony (Retired)</p>
+    </section>
+    <section id="rules" class="section"></section>
+    <section id="overall" class="section"></section>
+    <section id="netherite" class="section"></section>
+    <section id="crystal" class="section"></section>
+    <section id="diamond" class="section"></section>
+    <section id="uhc" class="section"></section>
+    <section id="axe" class="section"></section>
+    <section id="smp" class="section"></section>
+    <section id="sword" class="section"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
